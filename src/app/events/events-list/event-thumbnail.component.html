@@ -1,0 +1,25 @@
+
+<div class="contain">
+    <h1>{{event.name}}</h1>
+    <ul>
+        <li>Date:
+            {{event.date}}
+        </li>
+        <li>Time: 
+            {{event.time}}
+        </li>
+        <li>Price: 
+            {{event.price}}
+        </li>
+        <li>
+            {{event.image_url}}
+        </li>
+        <li>Address: 
+            <span> {{event.location.address}}</span>,
+            <span>{{event.location.city}}</span>
+        <span>
+            {{event.location.country}}
+        </span></li>
+    </ul> 
+    <button class="btn btn-primary" (click)="handleClick()">Click me</button>
+    </div>
